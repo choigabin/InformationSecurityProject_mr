@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>암호화 페이지</title>
+  <script src="js/encryption.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div id="index">
+    <img src="img/index.png" width="1920" height="1080" usemap="#encryption">
+
+      <input class="encrykey" type="text" id="encrykey"/> <br> 
+      <input class="generalmun" type="text" id="generalmun"/><br>
+      <input class="btn_encrypt" type="button" id="btn_encrypt" value="암호화, 복호화" onclick="encryption();"/><br>
+      <textarea class="encry_board" id="encry_board" cols="20" rows="6"></textarea><br>
+      <textarea class="encryptionmun" id="encryptionmun" cols="20" rows="2"></textarea><br>
+      <textarea class="decriptionmun" id="decriptionmun" cols="20" rows="2"></textarea>
+
+      <map id="encryption" name="encryption">
+        <area shape="rect" coords="362,175,996,231" href="index.html" target="_self">
+        <area shape="rect" coords="998,175,1554,231" href="minigame.html" target="_self">
+      </map>
+  </div>
+</body>
+</html>
